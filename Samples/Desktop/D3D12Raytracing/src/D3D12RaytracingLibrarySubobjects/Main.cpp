@@ -12,6 +12,10 @@
 #include "stdafx.h"
 #include "D3D12RaytracingLibrarySubobjects.h"
 
+extern "C" {
+	_declspec(dllexport) DWORD NvOptimusEnablement = 0x00000001;
+}
+
 _Use_decl_annotations_
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int nCmdShow)
 {
